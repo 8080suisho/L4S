@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GachaPractice2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gacha.png" translatesAutoresizingMaskIntoConstraints="NO" id="SH1-oP-fln">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="モンスターガチャ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvf-bd-23d">
+                                <rect key="frame" x="109.5" y="103" width="195" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="rnd-r4-5Jk"/>
+                                    <constraint firstAttribute="width" constant="195" id="teQ-zM-Dmn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Prl-BG-5wK">
+                                <rect key="frame" x="186.5" y="516" width="41" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Ioj-Ct-XRq"/>
+                                    <constraint firstAttribute="width" constant="41" id="Qs0-cG-z7c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="ひく"/>
+                                <connections>
+                                    <segue destination="ykL-Cn-4iN" kind="presentation" modalPresentationStyle="fullScreen" id="95O-S7-Muv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fvf-bd-23d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EAb-5E-bru"/>
+                            <constraint firstAttribute="bottom" secondItem="SH1-oP-fln" secondAttribute="bottom" id="IcZ-Vr-0vz"/>
+                            <constraint firstItem="SH1-oP-fln" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QZp-I6-eoM"/>
+                            <constraint firstItem="Prl-BG-5wK" firstAttribute="top" secondItem="fvf-bd-23d" secondAttribute="bottom" constant="384" id="cAV-0d-zD2"/>
+                            <constraint firstItem="SH1-oP-fln" firstAttribute="centerX" secondItem="fvf-bd-23d" secondAttribute="centerX" id="gRr-5F-ltr"/>
+                            <constraint firstItem="SH1-oP-fln" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="su2-tM-1bN"/>
+                            <constraint firstItem="fvf-bd-23d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="vqE-y5-qUr"/>
+                            <constraint firstItem="Prl-BG-5wK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wDG-50-lQP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="Yss-cb-5n3">
+            <objects>
+                <viewController id="ykL-Cn-4iN" customClass="ResultViewController" customModule="GachaPractice2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MMk-oG-Ulg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="whY-dm-Irs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Fa-yk-ah4">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afd-YK-jGN">
+                                <rect key="frame" x="31" y="65" width="62" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="ESH-6h-TKj"/>
+                                    <constraint firstAttribute="width" constant="62" id="ayc-jt-Pbh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="もどる"/>
+                                <connections>
+                                    <action selector="back" destination="ykL-Cn-4iN" eventType="touchUpInside" id="b1B-Hf-X6W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="whY-dm-Irs" firstAttribute="centerX" secondItem="5Fa-yk-ah4" secondAttribute="centerX" id="9TB-vZ-Dgh"/>
+                            <constraint firstItem="whY-dm-Irs" firstAttribute="centerY" secondItem="MMk-oG-Ulg" secondAttribute="centerY" id="Ght-uU-xMS"/>
+                            <constraint firstItem="whY-dm-Irs" firstAttribute="top" secondItem="MMk-oG-Ulg" secondAttribute="topMargin" constant="-44" id="HIR-jd-qGT"/>
+                            <constraint firstItem="5Fa-yk-ah4" firstAttribute="leading" secondItem="Ety-Dy-gnc" secondAttribute="leading" constant="57" id="Uah-0Y-wUM"/>
+                            <constraint firstItem="Ety-Dy-gnc" firstAttribute="bottom" secondItem="5Fa-yk-ah4" secondAttribute="bottom" constant="264" id="bFo-3I-SG4"/>
+                            <constraint firstItem="whY-dm-Irs" firstAttribute="centerX" secondItem="MMk-oG-Ulg" secondAttribute="centerX" id="gLc-Be-Xtq"/>
+                            <constraint firstItem="whY-dm-Irs" firstAttribute="leading" secondItem="Ety-Dy-gnc" secondAttribute="leading" id="gnB-Ja-9Ed"/>
+                            <constraint firstItem="Afd-YK-jGN" firstAttribute="leading" secondItem="Ety-Dy-gnc" secondAttribute="leading" constant="31" id="izL-nK-GyA"/>
+                            <constraint firstItem="whY-dm-Irs" firstAttribute="centerY" secondItem="5Fa-yk-ah4" secondAttribute="centerY" id="kbq-Dy-wZ5"/>
+                            <constraint firstItem="Afd-YK-jGN" firstAttribute="top" secondItem="Ety-Dy-gnc" secondAttribute="top" constant="21" id="waF-tQ-0zP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ety-Dy-gnc"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="whY-dm-Irs" id="eaY-nH-kWQ"/>
+                        <outlet property="monsterImageView" destination="5Fa-yk-ah4" id="fIE-ao-I4d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yu8-Tj-A6E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.86956521739137" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gacha.png" width="225" height="339"/>
+    </resources>
+</document>
