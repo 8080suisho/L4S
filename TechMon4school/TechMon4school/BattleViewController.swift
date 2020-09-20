@@ -33,15 +33,13 @@ class BattleViewController: UIViewController {
     
     override func viewDidLoad(){
         
-    }
-
-    override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        playerNameLabel.text = "勇者"
+        playerImageView.image = UIImage(named: "yusya.png")
+        
         
     }
     
-
-   
 
 }
